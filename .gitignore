@@ -2,3 +2,6 @@
 
 # IDE
 /.idea
+
+# git submodule
+common
