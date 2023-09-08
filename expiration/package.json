@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tickapp/common": "^1.0.12",
+    "@tickapp/common": "^1.0.13",
     "@types/bull": "^4.10.0",
     "bull": "^4.11.3",
     "node-nats-streaming": "^0.3.2",
