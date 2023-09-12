@@ -32,7 +32,7 @@ afterAll(async () => {
   if (mongo) {
     await mongo.stop();
   }
-  await mongoose.connection.close(true);
+  await mongoose.connection.close();
 });
 
 global.signin = (id?: string) => {
