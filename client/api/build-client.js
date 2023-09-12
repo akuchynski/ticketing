@@ -6,7 +6,7 @@ export default ({ req }) => {
 
     return axios.create({
       // baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
-      baseURL: 'http://www.tickapp.site',
+      baseURL: 'http://www.tickapp.site/',
       headers: req.headers,
     });
   } else {
