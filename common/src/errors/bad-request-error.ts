@@ -10,6 +10,6 @@ export class BadRequestError extends CustomError {
   }
 
   serializeErrors(): { message: string; field?: string }[] {
-    return [{ message: this.message}];
+    return [{ message: this.message }];
   }
 }
