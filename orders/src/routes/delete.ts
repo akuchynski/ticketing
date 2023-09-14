@@ -27,7 +27,7 @@ router.delete(
     order.status = OrderStatus.Cancelled;
     await order.save();
 
-    new OrderCancelledPublisher(natsWrapper.client).publish({
+    await new OrderCancelledPublisher(natsWrapper.client).publish({
       id: order.id,
       version: order.version,
       ticket: {
